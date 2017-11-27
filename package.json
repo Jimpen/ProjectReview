@@ -4,7 +4,7 @@
   "description": "",
   "main": "code.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "styles": "lessc stylesheet.less stylesheet.css"
   },
   "repository": {
     "type": "git",

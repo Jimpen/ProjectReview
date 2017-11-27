@@ -14,19 +14,24 @@ function renderMovie(movie){
    
 };
 
-/*
-for (let i=1; i<=5;i++){
-    document.getElementById("star"+i).addEventListener("click", function (){changeStarRating(i)})
-}
-*/
+
+$(".stars").on("click", "span", function(e){
+    
+      let star = $(e.target);
+    
+      let grade = parseInt(star.attr("data-rating-id"));
+    
+      changeStarRating(grade);
+
+    });
+
+
 
 function changeStarRating(grade){
-    
     $(".filled").removeClass("filled");
-    for (let i=1; i<=5;i++){
+    for (let i=1; i<=grade;i++){
         $("[data-rating-id=" + i + "]").addClass("filled");
     }
-    
 }    
 
 
