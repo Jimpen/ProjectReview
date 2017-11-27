@@ -1,32 +1,25 @@
 .container {
-margin: 0 auto;
-max-width: 500px;
-max-height: 500px;
-display: flex;
-flex-direction: row;
+  background-color: green;
+  margin: 10px auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
 }
-
 .review {
-background-color: greenyellow;
-margin: 0 auto;
-max-width: 500px;
-max-height: 500px;
+  flex-grow: 1;
+  padding: 15px;
 }
-
-.title{
-background-color: greenyellow;
-margin:0 auto;
-max-width: 500px;
-max-width: 500px; 
+.image {
+  max-width: 200px;
+  max-height: 350px;
 }
-
-.image{
-background-color: grey;
-margin: 0 auto;
-max-width: 100px;
-max-height: 100px;
+.stars span {
+  color: black;
+  user-select: none;
+  cursor: pointer;
+  font-size: 15px;
 }
-
-#text{
-    background-color: grey;
+.stars .filled {
+  color: red;
 }

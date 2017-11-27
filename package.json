@@ -1,0 +1,22 @@
+{
+  "name": "projectreview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jimpen/ProjectReview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jimpen/ProjectReview/issues"
+  },
+  "homepage": "https://github.com/Jimpen/ProjectReview#readme",
+  "devDependencies": {
+    "less": "^2.7.3"
+  }
+}

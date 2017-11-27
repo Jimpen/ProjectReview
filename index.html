@@ -8,24 +8,34 @@
     <title>Movie review</title>
 </head>
 <body>
-<div class=container>
+<div class="container">
 
-<div class=image>Picture
-        <img src="https://lumiere-a.akamaihd.net/v1/images/the-last-jedi-theatrical-poster-film-page_bca06283.jpeg?region=0%2C0%2C480%2C711" alt=poster>
-</div>
+    <div> 
+        <img class="image" src=""/>
+    </div>
     
-<div class=review>
-    <h1 class=title>Star Wars - The last Jedi </h1>
+    <div class="review">
+        <h1 id="movietitle"></h1>
+        
+        <div class="stars">
+            <span data-rating-id="1">&#9733;</span>
+            <span data-rating-id="2">&#9733;</span>
+            <span data-rating-id="3">&#9733;</span>
+            <span data-rating-id="4">&#9733;</span>
+            <span data-rating-id="5">&#9733;</span>
+        </div>
 
-    <p id=text> Recensionen </p>
+        <p id="movietext"> </p>
 
-    <ul>
-        <li> Luke Skywalker</li>
-        <li> Leia Organa</li>
-    </ul>
+        <ul id="actors">
+        </ul>
+    </div>
+
 </div>
-</div>
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./data.js"></script>
+<script src="./code.js"></script>
     
 </body>
 </html>
