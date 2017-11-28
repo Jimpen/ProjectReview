@@ -1,7 +1,7 @@
 // Ett annat alternativ är: 
 // let movieData = require("./data");
 
-import {movieData} from './data';
+import {movieData} from "./data";
 let $ = require ("jquery");
 
 function renderMovie(movie){
@@ -15,7 +15,7 @@ function renderMovie(movie){
        actorList += "<li>" + movie.actor[i] + "</li>";
        console.log(i);
    }
-            
+
    document.querySelector(".review ul").innerHTML = actorList;
    
 };
