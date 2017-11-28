@@ -5,7 +5,9 @@
   "main": "code.js",
   "scripts": {
     "styles": "lessc stylesheet.less stylesheet.css",
-    "bundle": "webpack"
+    "bundle": "webpack",
+    "copyindex": "cp index.html distribution/index.html",
+    "build": "npm run bundle && npm run styles && npm run copyindex"
   },
   "repository": {
     "type": "git",
