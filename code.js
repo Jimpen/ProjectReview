@@ -12,7 +12,7 @@ function renderMovie(movie){
    let actorList = "";
     
    for(let i=0; i<movie.actor.length; i++){
-       actorList += '<li>' + movie.actor[i] + "</li>";
+       actorList += "<li>" + movie.actor[i] + "</li>";
        console.log(i);
    }
 
