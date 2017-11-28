@@ -4,7 +4,8 @@
   "description": "",
   "main": "code.js",
   "scripts": {
-    "styles": "lessc stylesheet.less stylesheet.css"
+    "styles": "lessc stylesheet.less stylesheet.css",
+    "bundle": "webpack"
   },
   "repository": {
     "type": "git",
@@ -13,10 +14,17 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jimpen/ProjectReview/issues"
+    "url": "https://github.com/Jimpen/ProjectReview/issues",
+    "devDependencies": {
+      "less": "^2.7.3"
+    }
   },
   "homepage": "https://github.com/Jimpen/ProjectReview#readme",
   "devDependencies": {
-    "less": "^2.7.3"
+    "less": "^2.7.3",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }

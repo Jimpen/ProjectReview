@@ -1,3 +1,9 @@
+// Ett annat alternativ är: 
+// let movieData = require("./data");
+
+import {movieData} from './data';
+let $ = require ("jquery");
+
 function renderMovie(movie){
   document.querySelector(".review h1").textContent = movie.title;
   document.querySelector(".review p").textContent = movie.reviewtext;
@@ -33,8 +39,6 @@ function changeStarRating(grade){
         $("[data-rating-id=" + i + "]").addClass("filled");
     }
 }    
-
-
 
 
 
