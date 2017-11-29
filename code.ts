@@ -1,17 +1,24 @@
-// Ett annat alternativ är: 
-// let movieData = require("./data");
+import * as angular from "angular";
+
+let app = angular.module("reviewApp", []);
+
+app.controller("reviewController", function($scope){
+    $scope.message = "Hello from Angular!";
+});
 
 import {movieData} from "./data";
 import * as $ from "jquery";
+import { Review } from "./interfaces";
 
-function renderMovie(movie){
+function renderMovie(movie: Review){
+
   document.querySelector(".review h1").textContent = movie.title;
-  document.querySelector(".review p").textContent = movie.reviewtext;
+  document.querySelector(".review p").textContent = movie.review;
   document.querySelector(".image").setAttribute("src",movie.imgUrl)
 
    let actorList = "";
-   for(let i=0; i<movie.actor.length; i++){
-       actorList += "<li>" + movie.actor[i] + "</li>";
+   for(let i=0; i<movie.actors.length; i++){
+       actorList += "<li>" + movie.actors[i] + "</li>";
        console.log(i);
    }
 
@@ -19,7 +26,8 @@ function renderMovie(movie){
    
 };
 
-$(".stars").on("click", "span", function(e){
+
+$(".stars").on("click", "span", (e) => {
     
       let star = $(e.target);
     
