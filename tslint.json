@@ -1,0 +1,18 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        //"tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules":{  //Enforces braces for if/for/do/while statements.
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "as-needed",
+            "ignore-same-line"
+          ]
+        }
+      },
+    "rulesDirectory": []
+}

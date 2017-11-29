@@ -2,7 +2,7 @@
 // let movieData = require("./data");
 
 import {movieData} from "./data";
-let $ = require ("jquery");
+import * as $ from "jquery";
 
 function renderMovie(movie){
   document.querySelector(".review h1").textContent = movie.title;
@@ -10,7 +10,6 @@ function renderMovie(movie){
   document.querySelector(".image").setAttribute("src",movie.imgUrl)
 
    let actorList = "";
-    
    for(let i=0; i<movie.actor.length; i++){
        actorList += "<li>" + movie.actor[i] + "</li>";
        console.log(i);
@@ -19,7 +18,6 @@ function renderMovie(movie){
    document.querySelector(".review ul").innerHTML = actorList;
    
 };
-
 
 $(".stars").on("click", "span", function(e){
     
